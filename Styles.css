@@ -2,7 +2,19 @@
 /*Instead of wasting time, write all the tags with the same style using commas*/
 h1,h2,p {
     text-align: center;
-    font-family: cursive;
+    font-family: Impact,serif;
+}
+
+h1 {
+    font-size:40px;
+}
+
+h2 {
+    font-size:30px;
+}
+
+.established {
+    font-style: italic;
 }
 
 body {
