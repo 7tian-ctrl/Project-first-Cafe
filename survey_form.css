@@ -1,6 +1,7 @@
 /*styling*/
 
 body {
+    display:flex;
     margin:180px;
     padding:3em;
     padding: top 0;
@@ -13,21 +14,29 @@ body {
 h1 {
     font-family:Impact sans-serif;
     font-size:3em;
+    padding-left:0.7em;
+    border-width: 3cm;
+}
+
+.top {
+    background-color: whitesmoke;
+    border-radius: 17px;
 }
 
 p:first-child {
     font-size:1.2em;
+    background-color: none;
 }
 
 p {
     font-family: cursive;
     font-size:1em;
+    padding-left:1.3em;
     padding-top: 1em;;
     padding-bottom: 1em;
 }
 
 main {
-    background-color: whitesmoke;
     color: black;
     opacity: 0.9;
 }
@@ -43,7 +52,53 @@ footer {
 }
 
 .coffee-taste {
-    padding:0.3cm;
+    font-size:18px;
+    font-weight:20;
+    text-transform: capitalize;
+    display:inline-block;
+    vertical-align: middle;   
+    position: relative;
+    padding-top: 5px;
+    padding-left: 30px;
+    cursor:pointer;
+}
+
+.coffee-taste + .coffee-taste {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.coffee-taste input[type='radio']{
+    display:none;
+}
+
+.coffee-taste span{
+    height:12px;
+    width:12px;
+    border-radius:50%;
+    border:3px solid #010b0f;
+    display:inline-block;
+    position: absolute;
+    left:0;
+    top:7px;
+}
+
+.coffee-taste span::after{
+    content:'';
+    height: 8px;
+    width:8px;
+    background: #636363;
+    display:block;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: 300ms ease-in-out 0s;
+    border-radius:50%;
+}
+
+.coffee-taste input[type='radio']:checked ~ span::after{
+    transform: translate(-50%,-50%) scale(1);
 }
 
 textarea {
@@ -53,8 +108,10 @@ textarea {
     color:black;
     border-color:black;
     padding-top:0.5cm;
-    background-color:rgb(186, 252, 245);
+    background-color:whitesmoke;
+    border-radius: 10px;
     font-family:cursive;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .textarea1 {
@@ -64,8 +121,6 @@ textarea {
 form {
     min-width: 300px;
     width: 60vw;
-    padding-top:1em;
-    padding-bottom:6em;
 }
 
 input[type=submit] {
@@ -80,11 +135,11 @@ input[type=submit] {
 }
 
 fieldset {
-    padding-left:30px;
-    padding:10px;
     margin:50px;
     opacity: 0.9;
     color:black;
+    background-color: whitesmoke;
+    border-radius:15px;
     border:  rgb(113, 68, 184);
 }
 
