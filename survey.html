@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Suvey Form</title>
+        <link rel="stylesheet" href="survey_form.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    </head>
+    
+    <body>
+        <main>
+            <h1>Survey Form</h1>
+            <p><u>Please fill out your views here</u></p>
+
+            <ul>
+                <form action="">
+                    <fieldset>
+                        <p><b>Q1 How often are you purchasing coffee from Cafes, or other similar establishments?</b></p><br>
+                        <div class='coffee-taste'><label><input type='radio' name='how_much_you_drink' value="never" id="never" required>Never</label></div><br> 
+                        <div class='coffee-taste'><label><input type='radio' name='how_much_you_drink' value="rarely" id="rarely" required>A few times a Month</label></div><br> 
+                        <div class='coffee-taste'><label><input type='radio' name='how_much_you_drink' value="often" id="often" required>Once a Week</label></div><br> 
+                        <div class='coffee-taste'><label><input type='radio' name='how_much_you_drink' value="frequently" id="frequently" required>A couple times a Week</label></div><br> 
+                        <div class='coffee-taste'><label><input type='radio' name='how_much_you_drink' value="everyday" id="everyday" required>Every Working Day</label></div><br> 
+                        <div class='coffee-taste'><label for="other1"><input type="radio" name="how_much_you_drink" value="other1" id="other1" required>Other</label><br> 
+                        <div class='textarea1'><textarea placeholder="please specify"></textarea></label></div> </fieldset> 
+
+                    <fieldset> 
+                        <p><b>Q2 What is your go to order of coffee?</b></p> 
+                        <div class='coffee-taste'><input type="radio" name="coffe_you_like" value="flat_white" id="flat_white" required><label for='flat_white'>Flat White</label></div><br> 
+                        <div class='coffee-taste'><input type="radio" name="coffe_you_like" value="americano" id="americano" required><label for='americano'>Americano</label></div><br> 
+                        <div class='coffee-taste'><input type="radio" name="coffe_you_like" value="latte" id="latte" required><label for='latte'>Latte</label></div><br>
+                        <div class='coffee-taste'><input type="radio" name="coffe_you_like" value="cappuccino" id="cappuccino" required><label for='cappuccino'>Cappuccino</label></div><br>
+                        <div class='coffee-taste'><input type="radio" name="coffe_you_like" value="none" id="none" required><label for='none'>Flat White</label></div><br>
+                        <div class='coffee-taste'><input type="radio" name="coffe_you_like" value="other" id="other2" required><label for='other2'>Other </label></div><br>
+                        <div class='textarea1'><textarea id="other" placeholder="Espresso,etc..."></textarea></div>
+                    </fieldset>
+
+                    <fieldset>
+                        <p><b>Q3 How much money do you spend on average, on your coffees?</b></p>
+                        <div class="coffee-taste"><label><input type='radio' name='money-spent' value='0' id='0' required>$0 (Don't Drink)</label></div>
+                        <div class="coffee-taste"><label><input type='radio' name='money-spent' value='less_than_1' id='less_than_1' required>Less than $1</label></div>
+                        <div class="coffee-taste"><label><input type='radio' name='money-spent' value='$1-$2' id='$1-$2' required>$1-$2</label></div>
+                        <div class="coffee-taste"><label><input type='radio' name='money-spent' value='$2-$3' id='$2-$3' required>$2-$3</label></div>
+                        <div class="coffee-taste"><label><input type='radio' name='money-spent' value='$3-$4' id='$3-$4' required>$3-$4</label></div>
+                        <div class="coffee-taste"><label><input type='radio' name='money-spent' value='$4+' id='$4+' required>$4+</label></div>
+                        <div class='textarea1'><textarea id="other" placeholder="How much do you spend?"></textarea></div>
+                    </fieldset>
+
+                    <fieldset>
+                        <p><b>Q4 What is the main reason for your usage of your favourite coffee store?</b></p>
+                        <div class="coffee-taste"><label><input type='radio' name='reason' value='price_range' id='price_range' required>Price Range</label></div>
+                        <div class="coffee-taste"><label><input type='radio' name='reason' value='convenience' id='convenience' required>Convenience</label></div>
+                        <div class="coffee-taste"><label><input type='radio' name='reason' value='location' id='location' required>Location</label></div>
+                        <div class="coffee-taste"><label><input type='radio' name='reason' value='no_competition' id='no_competition' required>No Competition</label></div>
+                        <div class="coffee-taste"><label><input type='radio' name='reason' value='other' id='other' required>Other</label></div>
+                        <div class="coffee-taste"><label><input type='radio' name='reason' value="don't_use_one" id="don't_use_one" required>I don't use a coffee store</label></div>
+                        <div class='textarea1'><textarea id="other" placeholder="Your reason?"></textarea></div>
+                    </fieldset>
+
+                    <fieldset>
+                        <p><b>Q5 Does your usual order contain any items that aren't coffee?</b></p>
+                        <div class="coffee-taste"><label><input type='radio' name='items' value='always' id='always' required>Always</label></div>
+                        <div class="coffee-taste"><label><input type='radio' name='items' value='occasionaly' id='occasionaly' required>Occasionaly</label></div>
+                        <div class="coffee-taste"><label><input type='radio' name='items' value='rarely' id='rarely' required>Rarely</label></div>
+                        <div class="coffee-taste"><label><input type='radio' name='items' value='only_coffee' id='only_coffee' required>I only buy coffee</label></div>
+                        <div class="coffee-taste"><label><input type='radio' name='items' value='no_coffee' id='no_coffee' required>I don't order coffee</label></div>
+                        <div class='textarea1'><textarea id="other" placeholder="What do you order?"></textarea></div>
+                    </fieldset>
+
+                    <fieldset>
+                        <p><b>Q6 What type of coffee shops are in your town?</b></p>
+                        <div class="coffee-taste"><label><input type='checkbox' name='shop_type' value='costa' id='costa'>Costa</label></div>
+                        <div class="coffee-taste"><label><input type='checkbox' name='shop_type' value='starbucks' id='starbucks' checked>Starbucks</label></div>
+                        <div class="coffee-taste"><label><input type='checkbox' name='shop_type' value='caffe_nero' id='caffe_nero'>Caffe Nero</label></div>
+                        <div class="coffee-taste"><label><input type='checkbox' name='shop_type' value='local_cafes' id='local_cafes'>Local Cafes</label></div>
+                        <div class="coffee-taste"><label><input type='checkbox' name='shop_type' value='none' id='none'>None of the Above</label></div>
+                        <div class='textarea1'><textarea id="other" placeholder="What type of shops do you have?"></textarea></div>
+                    </fieldset>
+
+                <input type="submit" name="Submit" id="submit" value="Thank You">
+
+                <footer>
+                    <p>made by 7tian</p>
+                    <p>support me on <a href='https://github.com/7tian-ctrl' targrt'_blank'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+</svg></a></p>
+                </footer>
+            </form>
+        </main>
+    </body>
+</html>
